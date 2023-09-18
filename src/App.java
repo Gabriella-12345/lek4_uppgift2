@@ -3,13 +3,16 @@ public class App {
     Scanner text = new scanner(System.in);
 //*Uppgift a */
 
-        System.out.print("Var god att skriv en mening:");
+        System.out.print("Var god och skriv en mening:");
+        String ord = text.nextline(); //*Skapat en string som heter: ord  */
+        System.out.println("Längden på din menning är: " + ord.lenght()); //* räknar längden */ 
 
 //* uppgigt b*/
 
-        String ord = text.nextline(); //*Skapat en string som heter: ord  */
+        System.out.print("Välj ett valfritt ord i från din mening och skriv den här:");
         
-        System.out.println("Längden på din menning: " + ord.lenght());
+
     
+
     }
 }
