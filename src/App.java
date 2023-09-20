@@ -1,28 +1,44 @@
+import java.util.Scanner;
+
 public class App {
+
     public static void main(String[] args) throws Exception {
-    Scanner läsare = new scanner(System.in);
-    String ord;
+    Scanner läsare = new Scanner(System.in);
+    
 
-//*Uppgift a */
+        System.out.println("Hej!"); 
 
-        System.out.print("Var god och skriv en mening:");
-        String ord = läsare.nextline(); //*Skapat en string som heter: ord  */
-        System.out.println("Längden på din menning är: " + ord.lenght()); //* räknar längden */ 
+        System.out.print("Skriv ditt för- och efternamn, tack:");
 
-//* uppgigt b*/
+        String ord = läsare.nextLine(); //*Skapat en string som heter: ord  */
 
-        System.out.print("Välj ett valfritt ord i från din tidiagre mening och skriv den här:");
+        System.out.println("Längden på ditt namn är: " + ord.length()); //* räknar längden */ 
+
+
+        System.out.print("Välj ett valfritt namn från ditt namn och skriv den här:");
+        String test = läsare.nextLine();
+        System.out.println(test);
         
-        System.out.println(ord.indexOf("")); 
+        String data = (ord);
 
-        System.out.print("Ditt ord ligger på plats" +  + "i meningen")
-//* uppgift c */
+        int plats1 = data.indexOf(" ");
 
-        Substring
-//*uppgift d */
-        boolean 
+        String namn_1 = data.substring(0,plats1);
 
-//* uppgift e */
+        int plats2 = data.indexOf(" ", plats1+1);
+
+        String namn_2 = data.substring(plats1,data.length());
+
+        System.out.println("förnamn: "+namn_1+" efternamn:"+namn_2 );
+
+        
+
+
+
+
+
+        System.out.println("Är det sannt att ditt efternamn är" + namn_2);
+
     }
 
 }
